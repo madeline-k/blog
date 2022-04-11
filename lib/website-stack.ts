@@ -15,7 +15,7 @@ export class WebsiteStack extends Stack {
     });
 
     new BucketDeployment(this, 'DeployStaticWebsite', {
-      sources: [ Source.asset('../site')],
+      sources: [ Source.asset('./site')],
       destinationBucket: siteBucket
     })
   }
